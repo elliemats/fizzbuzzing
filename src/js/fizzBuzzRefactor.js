@@ -14,7 +14,8 @@ for (var i=1; i <= 20; i++)
 
 /* REFACTORED SOLUTION */
 
-function myFizzBuzz (n) {
+function fizzBuzzIt (n) {
+  var result = [];
   if (typeof n !== 'number') {
     return 'Input must be an integer.';
   }
@@ -22,6 +23,7 @@ function myFizzBuzz (n) {
     var output = '';
     if (i % 3 === 0) output += 'Fizz';
     if (i % 5 === 0) output += 'Buzz';
-    console.log(output || i);
+    result.push(output || i);
   }
+  return result;
 }
