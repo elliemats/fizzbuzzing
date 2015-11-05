@@ -8,7 +8,7 @@
 
       var result;
 
-      it('should return "Fizz" for any multiple of 3', function () {
+      it('should return false input message for any non-integer', function () {
           result = fizzBuzzIt('peanut');
           expect(result).toEqual("Input must be an integer.");
       });
